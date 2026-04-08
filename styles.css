@@ -31,7 +31,6 @@ img{
  box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* Imágenes cuando se muestran en interacción */
 #imagenCrecer img, #imagenMirada img{
  width:500px;
  max-width:90%;
@@ -46,14 +45,12 @@ img{
  max-width:900px;
 }
 
-/* Estilos por etapa */
 #etapa1{background:linear-gradient(135deg,#1e3c72,#2a5298);color:white;}
 #etapa2{background:linear-gradient(135deg,#42275a,#734b6d);color:white;}
 #etapa3{background:linear-gradient(135deg,#134e5e,#71b280);color:white;}
 #etapa4{background:linear-gradient(135deg,#ff512f,#dd2476);color:white;}
 #etapa5{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:white;}
 
-/* Layout filas con imagen lateral */
 .row{
  display:flex;
  align-items:center;
