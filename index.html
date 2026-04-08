@@ -1,75 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentorías - Desarrollo Personal</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <body>
+<header>
+ <h1>Mis Mentorías</h1>
+ <nav>
+  <ul>
+   <li><a href="#etapa1">Etapa 1</a></li>
+   <li><a href="#etapa2">Etapa 2</a></li>
+   <li><a href="#etapa3">Etapa 3</a></li>
+   <li><a href="#etapa4">Etapa 4</a></li>
+   <li><a href="#etapa5">Etapa 5</a></li>
+  </ul>
+ </nav>
+</header>
 
-        <header>
-            <h1>Las Mentorías</h1>
-            <nav>
-                <ul>
-                    <li><a href="#etapa1">Etapa 1</a></li>
-                    <li><a href="#etapa2">Etapa 2</a></li>
-                    <li><a href="#etapa3">Etapa 3</a></li>
-                    <li><a href="#etapa4">Etapa 4</a></li>
-                    <li><a href="#etapa5">Etapa 5</a></li>
-                </ul>
-            </nav>
-        </header>
+<section id="etapa1">
+ <h2>Etapa 1 - Mirada Profunda y Proactividad</h2>
+ <img src="img/mirada.jpeg" alt="foto asturias">
 
-        <!-- ETAPA 1 -->
-        <section id="etapa1">
-            <h2>Etapa 1 - Ver vs Mirar</h2>
-            <img src="https://picsum.photos/400/300?random=1">
-            <p>Es necesario distinguir entre ver y mirar.</p>
-            <p><b>Ver</b> implica percibir con la vista, sin profundidad.</p>
-            <p><b>Mirar</b> implica atención, reflexión y conexión profunda.</p>
-            <p>Ser proactivo es responsabilizarse de tu vida y decisiones.</p>
-        </section>
+ <div class="card">
+  <p><i>"Una mirada amable puede cambiarte el destino"</i></p>
+ </div>
 
-        <!-- ETAPA 2 -->
-        <section id="etapa2">
-            <h2>Etapa 2 - Acciones Concretas</h2>
-            <img src="https://picsum.photos/400/300?random=2">
-            <p>Las acciones deben ser precisas y claras.</p>
-            <p>Evita la ambigüedad, define exactamente qué vas a hacer.</p>
-        </section>
+ <h3>La vida y la libertad</h3>
+ <p>La vida no está resuelta, somos nosotros quienes debemos construirla a través de nuestras decisiones. Somos libres y eso implica poder acertar o equivocarnos.</p>
 
-        <!-- ETAPA 3 -->
-        <section id="etapa3">
-            <h2>Etapa 3 - Realistas</h2>
-            <img src="https://picsum.photos/400/300?random=3">
-            <p>Tus objetivos deben estar a tu alcance.</p>
-            <p>Ni demasiado fáciles ni imposibles.</p>
-        </section>
+ <h3 onclick="mostrarMirada()" style="cursor:pointer;">Mirada profunda</h3>
+ <div class="card" id="textoMirada">
+ <p><b>Ver</b> es superficial, mientras que <b>mirar</b> implica profundidad, atención y reflexión.</p>
+ <p>La mirada profunda cambia nuestra percepción, nos ayuda a descubrir valor en nosotros, en los demás y en la realidad.</p>
+ <p>Multiplica nuestras relaciones y orienta nuestras decisiones.</p>
+ </div>
 
-        <!-- ETAPA 4 -->
-        <section id="etapa4">
-            <h2>Etapa 4 - Empatía y Enfoque</h2>
-            <img src="https://picsum.photos/400/300?random=4">
-            <p>Las acciones deben impactar positivamente a los demás.</p>
-            <p>Debes enfocarte en lo que realmente importa.</p>
-        </section>
+ <div class="card" id="imagenMirada" style="display:none;">
+    <img src="img/mirada.jpeg" alt="Mi mirada profunda">
+ </div>
 
-        <!-- ETAPA 5 -->
-        <section id="etapa5">
-            <h2>Etapa 5 - Reto y Acción</h2>
-            <img src="https://picsum.photos/400/300?random=5">
-            <p>Las acciones deben tener un tiempo definido.</p>
-            <p>Deben ser retadoras para ayudarte a crecer.</p>
-        </section>
+ <h3>Proactividad</h3>
+ <p>Ser proactivo es asumir la responsabilidad de tu vida.</p>
+ <p>No eres víctima de las circunstancias, decides cómo actuar.</p>
+ <p>Lo contrario es la reactividad: dejarse llevar y ser espectador.</p>
 
-        <footer>
-            <p>&copy; 2026 Pablo de Abajo. Las Mentorías</p>
-        </footer>
-    </body>
+ <h3 onclick="mostrarImagen()" style="cursor:pointer;">Acciones C.R.E.C.E.R.</h3>
+        
+        <div class="card" id="textoCrecer">
+            <p><b>Concretas:</b> claras y precisas</p>
+            <p><b>Realistas:</b> alcanzables</p>
+            <p><b>Empáticas:</b> positivas para otros</p>
+            <p><b>Calendarizadas:</b> con tiempo definido</p>
+            <p><b>Enfocadas:</b> importantes para ti</p>
+            <p><b>Retadoras:</b> te hacen crecer</p>
+        </div>
 
+        <div class="card" id="imagenCrecer" style="display:none;">
+            <img src="img/accion_crecer.jpeg" alt="Mi acción crecer">
+        </div>
+
+</section>
+
+<section id="etapa2">
+ <h2>Etapa 2 - Conocimiento Personal</h2>
+ <p><i>"Cuando la propuesta es grande el corazón del hombre vibra"</i></p>
+
+ <div class="row">
+   <img src="img/foto1.jpeg" class="side-img">
+   <div class="card">
+     
+     <h3>Introducción</h3>
+     <p>En esta etapa entendí que para saber qué hacer con mi vida primero tengo que conocerme. No basta con actuar, necesito entender cómo soy y quién soy realmente.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto2.jpeg" class="side-img">
+   <div class="card">
+     <h3>Reconocerme en mis acciones</h3>
+     <p>Mis acciones hablan de mí. A través de lo que hago puedo descubrir cómo es mi forma de pensar, mi voluntad, mi disciplina y mi manera de actuar.</p>
+     <p>También entendí que no solo importan mis acciones, sino también mis "no acciones".</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto4.jpeg" class="side-img">
+   <div class="card">
+     <h3>Reflexión personal</h3>
+     <p>Un ejemplo claro fue darme cuenta de pequeños hábitos como el orden o la constancia.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto5.jpeg" class="side-img">
+   <div class="card">
+     <h3>Temperamento</h3>
+     <p>Es nuestra forma natural de reaccionar, sentir y actuar.</p>
+     <h3>Carácter</h3>
+     <p>Es lo que construyo con mis hábitos y depende de mí.</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto3.jpeg" class="side-img">
+   <div class="card">
+     <h3>Conclusión personal</h3>
+     <p>Esta mentoría me ayudó a entender que conocerme es clave para mejorar y crecer.</p>
+   </div>
+ </div>
+
+</section>
+
+<section id="etapa3">
+ <h2>Etapa 3 - Aceptación y Superación Personal</h2>
+ <p><i>"La vida humana es mi vida, lo que yo hago y lo que me pasa"</i></p>
+ <div class="row">
+   <img src="img/foto8.jpeg" class="side-img">
+   <div class="card">
+     <h3>Introducción</h3>
+     <p>En esta etapa entendí que no basta con conocerme: también tengo que aceptarme y trabajar para superarme.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto7.jpeg" class="side-img">
+   <div class="card">
+     <h3>Aceptación personal</h3>
+     <p>Aceptarme implica reconocer tanto mis fortalezas como mis debilidades.</p>
+     <p>Entendí que aceptar mis límites no es rendirme, sino el primer paso para mejorar.</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto9.jpeg" class="side-img">
+   <div class="card">
+     <h3>Superación personal</h3>
+     <p>Superarme significa tomar el control de mi vida y trabajar para desarrollar mi potencial.</p>
+     <p>No se trata de ser perfecto, sino de mejorar poco a poco con acciones conscientes.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto10.jpeg" class="side-img">
+   <div class="card">
+     <h3>Unidad personal</h3>
+     <p>Comprendí que debo actuar con coherencia entre lo que pienso, siento y hago.</p>
+     <p>Cuando hay equilibrio, avanzo hacia una vida con más sentido.</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto11.jpeg" class="side-img">
+   <div class="card">
+     <h3>Reflexión personal</h3>
+     <p>Me di cuenta de que a veces sigo caminos que no me aportan nada (como distracciones o hábitos negativos).</p>
+     <p>Ahora intento elegir acciones que realmente me ayuden a crecer.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto6.jpeg" class="side-img">
+   <div class="card">
+     <h3>Conclusión</h3>
+     <p>Esta mentoría me enseñó que aceptar quién soy me permite mejorar, y que la superación es un proceso constante.</p>
+   </div>
+ </div>
+
+</section>
+
+<section id="etapa4">
+ <h2>Etapa 4 - El Don</h2>
+ <p><i>"El don es lo que soy, no lo que hago"</i></p>
+ <div class="row">
+   <img src="img/foto12.jpeg" class="side-img">
+   <div class="card">
+     
+     <h3>Introducción</h3>
+     <p>En esta mentoría entendí que no solo importa cómo soy, sino quién soy realmente. Y eso se relaciona con mi don.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto13.jpeg" class="side-img">
+   <div class="card">
+     <h3>¿Qué es el don?</h3>
+     <p>Comprendí que cada persona es un don: algo único, irrepetible y con valor propio.</p>
+     <p>No es algo que elegimos, sino algo que recibimos y debemos desarrollar.</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto14.jpeg" class="side-img">
+   <div class="card">
+     <h3>El don hacia los demás</h3>
+     <p>Mi don no es solo para mí, sino para compartirlo con los demás.</p>
+     <p>Cuando lo pongo al servicio de otros, mi vida cobra más sentido.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto15.jpeg" class="side-img">
+   <div class="card">
+     <h3>Características del don</h3>
+     <p>Es gratuito, no se compra ni se elige.</p>
+     <p>Depende de mi libertad desarrollarlo o no.</p>
+     <p>Es mi aportación única al mundo.</p>
+   </div>
+ </div>
+
+ <div class="row">
+   <img src="img/foto16.jpeg" class="side-img">
+   <div class="card destacado">
+     <h3>Mi don</h3>
+     <p>Mi don es motivar y ayudar a los demás a mejorar. Es algo natural en mí: cuando alguien necesita apoyo, soy quien escucha, anima y acompaña.</p>
+     <p>Disfruto viendo cómo las personas progresan gracias a una palabra, un consejo o un ejemplo que puedo dar.</p>
+     <p>En el deporte, en el gimnasio y en mis estudios siempre busco mejorar, pero lo que más me llena es compartir ese progreso con los demás.</p>
+     <p>Mi objetivo no es solo crecer yo, sino ayudar a otros a sacar su mejor versión mientras yo trabajo en la mía.</p>
+   </div>
+ </div>
+
+ <div class="row reverse">
+   <img src="img/foto17.jpeg" class="side-img">
+   <div class="card">
+     <h3>Conclusión</h3>
+     <p>Esta mentoría me hizo ver que mi vida tiene más sentido cuando utilizo mi don para ayudar a los demás.</p>
+     <p>Ahí es donde encuentro motivación, propósito y satisfacción personal.</p>
+   </div>
+ </div>
+
+</section>
+
+<section id="etapa5"><h2>Etapa 5</h2><p>Añade aquí tu experiencia personal + fotos.</p></section>
+
+<footer>
+ <p>&copy; 2026 Pablo de Abajo - Mentorías</p>
+</footer>
+
+<script>
+function mostrarImagen(){
+    const texto = document.getElementById('textoCrecer');
+    const imagen = document.getElementById('imagenCrecer');
+
+    if(texto.style.display !== 'none'){
+        texto.style.display = 'none';
+        imagen.style.display = 'block';
+    } else {
+        texto.style.display = 'block';
+        imagen.style.display = 'none';
+    }
+}
+function mostrarMirada(){
+    const texto = document.getElementById('textoMirada');
+    const imagen = document.getElementById('imagenMirada');
+
+    if(texto.style.display !== 'none'){
+        texto.style.display = 'none';
+        imagen.style.display = 'block';
+    } else {
+        texto.style.display = 'block';
+        imagen.style.display = 'none';
+    }
+}
+
+</script>
+
+</body>
 </html>
