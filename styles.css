@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    background:#111;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 40px 40px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+section img{
+    width:300px;
+    margin:20px 0;
+    border-radius:15px;
+}
+
+/* Etapas estilos */
+
+#etapa1{ background:linear-gradient(135deg,#1e3c72,#2a5298); color:white; }
+#etapa2{ background:linear-gradient(135deg,#42275a,#734b6d); color:white; }
+#etapa3{ background:linear-gradient(135deg,#134e5e,#71b280); color:white; }
+#etapa4{ background:linear-gradient(135deg,#ff512f,#dd2476); color:white; }
+#etapa5{ background:linear-gradient(135deg,#0f2027,#203a43,#2c5364); color:white; }
+
+h2{
+    margin-bottom:20px;
+    font-size:2.5rem;
+}
+
+p{
+    max-width:800px;
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
